@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
+#import pickle
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
@@ -14,7 +14,7 @@ model = LinearRegression()
 model.fit(x_train , y_train)
 pred = model.predict(x_test)
 
-pickle.dump(model , open("Linear_model.pkl" , "wb"))
+#pickle.dump(model , open("Linear_model.pkl" , "wb"))
 
 st.title("Apple-Stock-Close-Price-Pridiction-Model")
 open = int(st.text_input("Open Price : " , "0"))
