@@ -17,9 +17,9 @@ pred = model.predict(x_test)
 #pickle.dump(model , open("Linear_model.pkl" , "wb"))
 
 st.title("Apple-Stock-Close-Price-Pridiction-Model")
-open = int(st.text_input("Open Price : " , "0" , key = "open"))
-high = int(st.text_input("Highest Price :" , "0" , key = "high"))
-low = int(st.text_input("Low Price :" , "0" , key = "low"))
+open = float(st.text_input("Open Price : " , "0" , key = "open"))
+high = float(st.text_input("Highest Price :" , "0" , key = "high"))
+low = float(st.text_input("Low Price :" , "0" , key = "low"))
 vol = int(st.text_input("Volume :" , "0" , key = "volume"))
 result = ""
 if st.button("Predict") :
